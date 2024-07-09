@@ -1,0 +1,1697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1194</width>
+    <height>816</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	font: &quot;B Nazanin&quot;;
+	background-color: rgb(222, 222, 220);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-11</y>
+      <width>1200</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MV Boli</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid rgb(222, 222, 220);
+    position: absolute;
+    top: 20 px;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+	color: rgb(58, 134, 255);
+    background-color: white;
+    border: 2px solid rgb(58, 134, 255);
+    border-bottom-color: rgb(222, 222, 220);
+	border-radius: 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 15ex;
+	top: 5 px;
+    padding: 20px;
+
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+}
+
+QTabBar::tab:selected {
+ 	background-color: rgba(224, 6, 159, 255);
+	color: white;
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="widget">
+     <attribute name="title">
+      <string>منو</string>
+     </attribute>
+     <widget class="QLabel" name="camera">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>2</y>
+        <width>661</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string>دوربین لود نشد</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>640</y>
+        <width>361</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>112</y>
+        <width>20</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>119</y>
+        <width>20</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>640</y>
+        <width>301</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>640</y>
+        <width>361</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>3</y>
+        <width>20</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>3</y>
+        <width>20</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="close">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>470</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(58, 134, 255);
+	font: 12pt &quot;MV Boli&quot;;
+	background-color: white;
+	border: 2px solid rgb(58, 134, 255);
+    border-radius: 12px;
+}
+
+QPushButton:hover:!pressed   {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}
+
+QPushButton:pressed   {
+  background-color: rgba(224, 6, 159, 255);
+  color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>بسته</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line_31">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>2</y>
+        <width>361</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_48">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>300</y>
+        <width>360</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="dateTimeEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>220</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MRT_Titr Cow</family>
+        <pointsize>48</pointsize>
+       </font>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="keyboardTracking">
+       <bool>true</bool>
+      </property>
+      <property name="calendarPopup">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="open">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>390</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(58, 134, 255);
+	font: 12pt &quot;MV Boli&quot;;
+	background-color: white;
+	border: 2px solid rgb(58, 134, 255);
+    border-radius: 12px;
+}
+
+QPushButton:hover:!pressed   {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}
+
+QPushButton:pressed   {
+  background-color: rgba(224, 6, 159, 255);
+  color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>باز</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>250</y>
+        <width>661</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane { /* The tab widget frame */\n    border-top: 2px solid rgb(222, 222, 220);\n    position: absolute;\n    top: 20 px;\n}\n\nQTabWidget::tab-bar {\n    alignment: center;\n}\n\n/* Style the tab using the tab sub-control. Note that\n    it reads QTabBar _not_ QTabWidget */\nQTabBar::tab {\n	color: rgb(58, 134, 255);\n    background-color: white;\n    border: 2px solid rgb(58, 134, 255);\n    border-bottom-color: rgb(222, 222, 220);\n	border-radius: 15px;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    min-width: 15ex;\n	top: 5 px;\n    padding: 20px;\n\n}\n\nQTabBar::tab:selected, QTabBar::tab:hover {\nbackground-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));\n}\n\nQTabBar::tab:selected {\n 	background-color: rgba(224, 6, 159, 255);\n	color: white;\n    border-color: #9B9B9B;\n    border-bottom-color: #C2C7CB; /* same as pane color */\n}</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_10">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>230</y>
+        <width>661</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="logo">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>10</y>
+        <width>321</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>دانشگاه حکیم سبزواری</string>
+      </property>
+     </widget>
+     <zorder>camera</zorder>
+     <zorder>line_2</zorder>
+     <zorder>line_3</zorder>
+     <zorder>line_4</zorder>
+     <zorder>line_5</zorder>
+     <zorder>line_7</zorder>
+     <zorder>line_9</zorder>
+     <zorder>line_8</zorder>
+     <zorder>close</zorder>
+     <zorder>line_31</zorder>
+     <zorder>line_48</zorder>
+     <zorder>dateTimeEdit</zorder>
+     <zorder>open</zorder>
+     <zorder>tableWidget</zorder>
+     <zorder>line_10</zorder>
+     <zorder>logo</zorder>
+    </widget>
+    <widget class="QWidget" name="widget_2">
+     <attribute name="title">
+      <string>حذف پلاک</string>
+     </attribute>
+     <widget class="QLabel" name="admins_info_header">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>371</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="line_27">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>648</y>
+        <width>361</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="add_admin_header">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>10</y>
+        <width>381</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="line_28">
+      <property name="geometry">
+       <rect>
+        <x>591</x>
+        <y>648</y>
+        <width>391</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_29">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>120</y>
+        <width>20</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_30">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>130</y>
+        <width>20</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>20</y>
+        <width>171</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>جست و جو با</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>50</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>کد ملی</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>نام و نام خانواگی</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>سمت</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>پلاک</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>تاریخ</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="search_box">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>51</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>70</number>
+      </property>
+      <property name="placeholderText">
+       <string>جست و جو را وارد کنید</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="search">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>50</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🔎/♻️</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="delPlakTable">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>180</y>
+        <width>751</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>731</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+color: rgb(255, 30, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_3">
+     <attribute name="title">
+      <string>ثبت پلاک</string>
+     </attribute>
+     <widget class="QLabel" name="add_admin_header_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>361</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string>ثبت پلاک جدید</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="line_35">
+      <property name="geometry">
+       <rect>
+        <x>411</x>
+        <y>147</y>
+        <width>20</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="last_name_label_3">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>210</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>نام و نام خانوادگی</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_36">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>140</y>
+        <width>20</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="name">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>210</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>50</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>نام و نام خانوادگی</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="email_label_3">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>310</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>شماره پلاک</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="phone_number_label_3">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>260</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>سمت</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_37">
+      <property name="geometry">
+       <rect>
+        <x>421</x>
+        <y>668</y>
+        <width>361</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>510</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(58, 134, 255);
+	font: 10pt &quot;MV Boli&quot;;
+	background-color: white;
+	border: 2px solid rgb(58, 134, 255);
+    border-radius: 12px;
+}
+
+QPushButton:hover:!pressed   {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}
+
+QPushButton:pressed   {
+  background-color: rgba(224, 6, 159, 255);
+  color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ثبت</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="email_label_4">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>360</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>کد ملی</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="code_meli">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>360</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit:disabled{
+color: rgb(0, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>10</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>کد ملی</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>410</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+color: rgb(255, 30, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="status">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>260</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>کارمند</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>آزاد</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>مدیر</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QSpinBox" name="spinBox">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>310</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>10</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+      <property name="displayIntegerBase">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>310</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>الف</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ب</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>پ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ت</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ث</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ج</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>چ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ح</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>خ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>د</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ذ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ر</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ز</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ژ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>س</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ش</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ص</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ض</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ط</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ظ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ع</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>غ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ف</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ق</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ک</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>گ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ل</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>م</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ن</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>و</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ه</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ی</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_3">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>310</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>310</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>100</number>
+      </property>
+      <property name="maximum">
+       <number>999</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_4">
+     <attribute name="title">
+      <string>ویرایش پلاک</string>
+     </attribute>
+     <widget class="QLabel" name="add_admin_header_3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>12</y>
+        <width>381</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_3">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>52</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>کد ملی</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>نام و نام خانواگی</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>سمت</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>پلاک</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>تاریخ</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="Line" name="line_38">
+      <property name="geometry">
+       <rect>
+        <x>591</x>
+        <y>650</y>
+        <width>391</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>22</y>
+        <width>171</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>جست و جو با</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="admins_info_header_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>12</y>
+        <width>371</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="line_39">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>650</y>
+        <width>361</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="search_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>52</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🔎/♻️</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_40">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>132</y>
+        <width>20</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_41">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>122</y>
+        <width>20</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>132</y>
+        <width>731</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+color: rgb(255, 30, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="search_box_2">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>50</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>70</number>
+      </property>
+      <property name="placeholderText">
+       <string>جست و جو را وارد کنید</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="editPlakTable">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>180</y>
+        <width>751</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="accessibleDescription">
+      <string/>
+     </property>
+     <attribute name="title">
+      <string>درباره ما</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>362</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>درباره ما</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="kahi">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>240</y>
+        <width>321</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(58, 134, 255);
+	font: 12pt &quot;MV Boli&quot;;
+	background-color: white;
+	border: 2px solid rgb(58, 134, 255);
+    border-radius: 12px;
+}
+
+QPushButton:hover:!pressed   {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:1 rgba(10, 242, 251, 255), stop:0 rgba(224, 6, 159, 255));
+  color: white;
+}
+
+QPushButton:pressed   {
+  background-color: rgba(224, 6, 159, 255);
+  color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>متین کاهی</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line_32">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>100</y>
+        <width>20</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_33">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>340</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_34">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>100</y>
+        <width>20</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>170</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>برنامه نویس:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QCommandLinkButton" name="report_plak">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>10</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>گزارش گیری</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1194</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
