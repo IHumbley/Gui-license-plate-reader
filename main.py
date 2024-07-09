@@ -9,7 +9,6 @@ from cv2 import VideoCapture
 from ultralytics import YOLO
 
 from PyQt5.QtCore import QThread, pyqtSignal
-from persiantools import digits
 from sys import argv
 
 
