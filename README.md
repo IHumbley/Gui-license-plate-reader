@@ -16,4 +16,5 @@ A simple Graphic license plate (Iranian plate) reader
 ⚠️ Attention: make sure all files is exist on directory 
 
 <br/>
-<h3>Thanks for read</h3>
+<h3>programmer: Matin Kahi<br/>
+   Thanks for reading</h3>
